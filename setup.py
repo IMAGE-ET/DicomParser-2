@@ -9,7 +9,7 @@ import os.path
 import sys
 
 
-setup(name="pynetdicom",
+setup(name="dicomparser",
       packages = find_packages(),
       include_package_data = True,
       version="0.1",
