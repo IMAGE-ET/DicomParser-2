@@ -25,8 +25,8 @@ def dparser(filename):
         return
     return dicomvalues       
 if __name__ == "__main__":
-    fname = raw_input("Please enter dicom filename: ")
-    print dict(dicomparser(fname))
+    fname = raw_input("Please enter dicom filename(give 'exampledata/sample.dcm' for testing) : ")
+    print dict(dparser(fname))
         
 
 
