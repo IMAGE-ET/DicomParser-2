@@ -17,16 +17,16 @@ def dparser(filename):
         data = dicom.read_file(filename)
         for key in data.dir():
             value = getattr(data, key, '')
-            if type(value) is dicom.UID.UID or key == "PixelData":
+            if key == "PixelData":
                 continue
             dicomvalues[key].append(value)
     else:
-        raise Exception("FileName should be a string") 
+        raise Exception("FileName should be a string")
         return
-    return dicomvalues       
+    return dicomvalues
 if __name__ == "__main__":
     fname = raw_input("Please enter dicom filename(give 'exampledata/sample.dcm' for testing) : ")
     print dict(dparser(fname))
-        
+
 
 
