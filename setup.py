@@ -12,7 +12,7 @@ import sys
 setup(name="dicomparser",
       packages = find_packages(),
       include_package_data = True,
-      version="0.1",
+      version="0.2",
       zip_safe = False, # want users to be able to see included examples,tests
       description="Parse dicom file and return as a dictionary",
       author="Hrishikesh K B",
